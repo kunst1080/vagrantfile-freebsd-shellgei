@@ -6,8 +6,8 @@ My Vagrantfile template to create a FreeBSD virtual machine using the VirtualBox
 ## Getting Started
 1. Install dependencies:
 
-  - VirtulBox
-  - vagrant
+  - VirtualBox
+  - Vagrant
 
 2. Clone this repository:
 

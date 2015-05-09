@@ -8,7 +8,7 @@ Vagrant.configure(2) do |config|
   config.vm.box_url = "https://github.com/kunst1080/packer-freebsd/releases/download/10.1-amd64_ufs/freebsd-10.1-amd64.box"
 
   config.vm.synced_folder ".", "/vagrant", disabled: true
- 
+
   config.vm.provider "virtualbox" do |vb|
     vb.name = "freebsd-base"
     vb.gui = false
