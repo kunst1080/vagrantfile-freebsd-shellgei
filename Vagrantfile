@@ -16,5 +16,15 @@ Vagrant.configure(2) do |config|
     vb.customize ["modifyvm", :id, "--natnet1", "10.0.0.0/24"]
   end
 
-  config.vm.provision "shell", :path => "provision.sh"
+  config.vm.provision "file", source: "provision_root.sh", destination: "/tmp/provision_root.sh"
+  config.vm.provision "file", source: "provision_user.sh", destination: "/tmp/provision_user.sh"
+  config.vm.provision "file", source: "provision_pkg.list", destination: "/tmp/provision_pkg.list"
+  config.vm.provision "shell", inline: <<-"EOS"
+    sed -i '' "s/`printf '\r'`//g" /tmp/provision_root.sh
+    sed -i '' "s/`printf '\r'`//g" /tmp/provision_user.sh
+    sed -i '' "s/`printf '\r'`//g" /tmp/provision_pkg.list
+    chmod +x /tmp/provision_root.sh /tmp/provision_user.sh
+    sudo /tmp/provision_root.sh
+    sudo -u vagrant /tmp/provision_user.sh
+  EOS
 end
