@@ -1,4 +1,4 @@
-vagrant-freebsd-base
+vagrantfile-freebsd-base
 ===
 
 My Vagrantfile template to create a FreeBSD virtual machine using the VirtualBox.
@@ -12,13 +12,13 @@ My Vagrantfile template to create a FreeBSD virtual machine using the VirtualBox
 2. Clone this repository:
 
   ```bash
-  git clone https://github.com/kunst1080/vagrant-freebsd-base.git
+  git clone https://github.com/kunst1080/vagrantfile-freebsd-base.git
   ```
 
 3. Start virtual machine:
 
   ```bash
-  cd vagrant-freebsd-base
+  cd vagrantfile-freebsd-base
   vagrant up
   ```
 
