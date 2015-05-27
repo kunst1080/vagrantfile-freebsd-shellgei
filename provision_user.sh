@@ -28,5 +28,10 @@ alias ggrep='/usr/local/bin/grep $*'
 alias factor=gfactor
 alias seq=gseq
 
+# jman
+alias man='env LC_CTYPE=ja_JP.eucJP jman'
+export PAGER='lv'
+export LV='-Ou8'
+EOS
 
 exit

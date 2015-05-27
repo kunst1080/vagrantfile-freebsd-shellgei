@@ -19,4 +19,11 @@ echo UseDNS no >> /etc/ssh/sshd_config
 service sshd restart
 
 
+### jman
+cat <<EOS >> /etc/manpath.config
+MANPATH_MAP     /bin            /usr/local/man/ja
+MANPATH_MAP     /usr/bin        /usr/local/man/ja
+EOS
+
+
 exit
