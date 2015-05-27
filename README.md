@@ -1,7 +1,8 @@
 vagrantfile-freebsd-shellgei
 ===
 
-USP友の会(https://www.usptomo.com/)で行われている通称「シェル芸」の練習を、FreeBSD上で行うためのVagrant設定です。
+[USP友の会](https://www.usptomo.com/)で行われている通称「シェル芸」の練習を、FreeBSD上で行うためのVagrant設定です。
+
 このリポジトリをcloneし、vagrant upするだけで、「シェル芸」でよく使用するコマンドがセットアップされたFreeBSDの仮想マシンを作成することができます。
 
 ※このリポジトリは @kunst1080 が個人的に作成しているものです。問い合わせなどは[本人のTwitterアカウント](https://twitter.com/kunst1080)か[Issues](https://github.com/kunst1080/vagrantfile-freebsd-shellgei/issues)へお願いします。

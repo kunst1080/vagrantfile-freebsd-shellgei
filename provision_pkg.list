@@ -9,6 +9,9 @@ gawk
 gsed
 gnugrep
 wget
+ja-mecab
+ja-mecab-ipadic
+ja-nkf
 base64
 sl
 w3m

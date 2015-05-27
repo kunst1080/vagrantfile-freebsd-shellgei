@@ -24,6 +24,10 @@ alias h=history
 alias vi=vim
 alias mv='mv -i'
 alias ggrep='/usr/local/bin/grep $*'
+function mecab() {
+  nkf -e | /usr/local/bin/mecab $* | nkf -w
+}
+
 # coreutils
 alias factor=gfactor
 alias seq=gseq
