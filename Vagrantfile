@@ -10,7 +10,7 @@ Vagrant.configure(2) do |config|
   config.vm.synced_folder ".", "/vagrant", disabled: true
 
   config.vm.provider "virtualbox" do |vb|
-    vb.name = "freebsd-base"
+    vb.name = "freebsd-shellgei"
     vb.gui = false
     vb.memory = "2048"
     vb.customize ["modifyvm", :id, "--natnet1", "10.0.0.0/24"]

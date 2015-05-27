@@ -1,1 +1,15 @@
+bash
+curl
 vim-lite
+open-usp-tukubai
+zsh
+coreutils
+moreutils
+gawk
+gsed
+gnugrep
+wget
+base64
+sl
+w3m
+tmux
