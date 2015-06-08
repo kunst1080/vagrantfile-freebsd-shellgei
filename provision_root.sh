@@ -5,6 +5,10 @@ set -euv
 cd
 
 
+### Set timezone
+cp /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
+
+
 ### Install Applications
 export ASSUME_ALWAYS_YES=yes
 cat /tmp/provision_pkg.list | xargs pkg install
